@@ -1,0 +1,14 @@
+{
+  "name": "cordova-plugin-idcard",
+  "version": "1.0.3",
+  "description": "idcard",
+  "main": "www/idcard.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "idcard"
+  ],
+  "author": "",
+  "license": "ISC"
+}

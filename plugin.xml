@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="org.apache.cordova.idcard" version="1.0.3" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>idcard</name>
+    <js-module name="idcard" src="www/idcard.js">
+        <clobbers target="cordova.plugins.idcard"/>
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="idcard">
+                <param name="android-package" value="org.apache.cordova.idcard.idcard"/>
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+
+        </config-file>
+        <source-file src="src/android/idcard.java" target-dir="src/org/apache/cordova/idcard"/>
+        <source-file src="libs/android/armeabi/libRskApi.so" target-dir="libs/armeabi"/>
+        <source-file src="libs/android/armeabi/libwlt2bmp.so" target-dir="libs/armeabi"/>
+        <source-file src="libs/android/rskapi.jar" target-dir="libs"/>
+    </platform>
+</plugin>
