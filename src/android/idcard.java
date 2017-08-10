@@ -56,10 +56,10 @@ public class idcard extends CordovaPlugin {
                     return true;
                 }
             }
-//            else{
-//                callbackContext.error("无法打开设备");
-//                return true;
-//            }
+            else{
+                callbackContext.error("无法打开设备");
+                return true;
+            }
 
         }
         else{
